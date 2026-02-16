@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<!-- DOCTYPE declaration tells the browser this is an HTML5 document -->
+<html lang="en">
+<!-- HTML root element with language attribute set to English -->
+
+<head>
+    <!-- HEAD section contains meta information and page title (not visible on page) -->
+    <meta charset="UTF-8"> <!-- Specifies character encoding as UTF-8 (supports all characters) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive on mobile devices -->
+    <title>Nawa-e-Waqt - 23 March 1971</title> <!-- Title shown in browser tab -->
+</head>
+
+<!-- BODY section contains all visible content of the webpage -->
+<body style="font-family: 'Times New Roman', serif; background-color: #f4f1e6; max-width: 1000px; margin: 0 auto; padding: 15px;">
+    <!-- 
+        BODY STYLING EXPLANATION:
+        - font-family: Sets newspaper-style serif font
+        - background-color: Light cream color (like old newspaper)
+        - max-width: Restricts content width to 1000px on large screens
+        - margin: 0 auto: Centers the entire page horizontally
+        - padding: Adds space inside the body
+    -->
+
+    <!-- ==================== NEWSPAPER HEADER SECTION ==================== -->
+    <!-- HEADER tag: Semantic HTML5 element for page header -->
+    <header style="text-align: center; border-bottom: 4px solid #8B4513; margin-bottom: 0; padding-bottom: 10px;">
+        <!-- 
+            HEADER STYLING:
+            - text-align: center: Centers all content
+            - border-bottom: Thick brown line below header
+            - padding-bottom: Space inside header bottom
+        -->
+        
+        <!-- h1: Main heading (most important heading on page) -->
+        <h1 style="font-size: 48px; font-weight: bold; margin: 5px 0; color: #2c1810;">Nawa-e-Waqt</h1>
+        <!-- Newspaper name in large, bold, dark brown text -->
+        
+        <!-- DIV: Generic container for grouping elements -->
+        <div style="display: flex; justify-content: space-between; font-size: 13px; border-top: 1px solid #8B4513; border-bottom: 1px solid #8B4513; padding: 5px 0;">
+            <!-- 
+                FLEXBOX EXPLANATION:
+                - display: flex: Creates flexible box layout
+                - justify-content: space-between: Pushes items to left and right
+                - This creates the newspaper masthead with date on left, price on right
+            -->
+            <span>LAHORE: TUESDAY, 17 December 1971</span>  <!-- SPAN: Inline container for text -->
+            <span>VOL. XXIV • NO. 82</span>               <!-- Center: volume and issue number -->
+            <span>PRICE 25 PAISA</span>                    <!-- Right side: newspaper price -->
+        </div>
+    </header>
+    <!-- END OF HEADER SECTION -->
+
+    <!-- ============MAIN HEADLINE SECTION ==================== -->
+    <!-- Breaking news headline in dark brown background -->
+    <div style="background-color: #2c1810; color: #f4f1e6; padding: 8px; text-align: center; margin-bottom: 0;">
+        <!-- h2: Second level heading (subordinate to h1) -->
+        <h2 style="font-size: 36px; font-weight: bold; margin: 0;">INDIAN ARMY ENTERS DHAKA</h2>  <!-- Main headline -->
+        <!-- h3: Third level heading -->
+        <h3 style="font-size: 18px; font-weight: normal; margin: 5px 0 0 0;">Major Developments in the War</h3>  <!-- Subheadline -->
+    </div>
+    <!-- END OF MAIN HEADLINE -->
+
+    <!-- =====TOP ROW - IMAGES AND MAIN ARTICLES ==================== -->
+    <!-- TABLE: Used for newspaper-style column layout (3 columns) -->
+    <!-- 
+        TABLE ATTRIBUTES:
+        - width="100%": Table takes full width of parent
+        - cellpadding="0": No space between cell content and border
+        - cellspacing="0": No space between cells
+        - style="border-collapse: collapse": Borders merge into single line
+    -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-left: 2px solid #8B4513; border-right: 2px solid #8B4513;">
+        <!-- TR: Table Row - First row contains 3 cells -->
+        
+        <!-- First row: Image, Main Article, Military Image -->
+        <tr>
+            <!-- TD: Table Data (cell) - Column 1: Original newspaper scan image -->
+            <td width="33%" valign="top" style="border-bottom: 1px solid #8B4513; border-right: 1px solid #8B4513; padding: 10px; background-color: #fff;">
+                <!-- 
+                    TD ATTRIBUTES:
+                    - width="33%": Cell takes 33% of table width
+                    - valign="top": Content aligns to top of cell
+                    - border-bottom: Brown line at bottom
+                    - border-right: Brown line on right side
+                    - padding: Space inside cell
+                    - background-color: White background
+                -->
+                
+                <!-- IMG tag: Displays image -->
+                <!-- src attribute: Path to image file -->
+                <!-- alt attribute: Text shown if image doesn't load (important for accessibility) -->
+                <img src="images/man.jpg" alt="Original Newspaper Scan" style="width: 100%; height: auto; border: 1px solid #8B4513;">
+                <!-- style="width: 100%" makes image fill the cell width -->
+                
+                <!-- P tag: Paragraph of text -->
+                <p style="font-size: 12px; text-align: center; margin: 5px 0;">Original front page - 23 March 1971</p>
+                <p style="font-size: 11px; margin: 5px 0 0 0; font-style: italic;">Complete edition available at Nawa-e-Waqt office</p>
+                <!-- font-style: italic makes text italic -->
+            </td>
+            
+            <!-- Column 2: War update with bullet points -->
+            <td width="34%" valign="top" style="border-bottom: 1px solid #8B4513; border-right: 1px solid #8B4513; padding: 10px; background-color: #fff;">
+                <!-- h3 heading for this section -->
+                <h3 style="font-size: 20px; font-weight: bold; margin: 0 0 8px 0; border-bottom: 2px solid #8B4513;">THE WAR CONTINUES</h3>
+                
+                <p style="font-size: 14px; line-height: 1.4;">Joint forces advance towards Dhaka. Pakistani forces offer resistance in multiple sectors. Heavy fighting reported on the outskirts.</p>
+                <!-- line-height: 1.4 controls spacing between lines -->
+                
+                <!-- UL - Unordered List (bullet points) -->
+                <!-- List of key war developments -->
+                <ul style="font-size: 13px; margin: 8px 0;">
+                    <!-- LI: List Item (each bullet point) -->
+                    <li>Indian paratroopers land near Tangail</li>
+                    <li>Pakistani forces retreat from forward positions</li>
+                    <li>Civilians celebrate in liberated areas</li>
+                    <li>International media covers the offensive</li>
+                </ul>
+                <!-- END OF UNORDERED LIST -->
+                
+                <!-- STRONG tag: Makes text bold (semantic meaning of importance) -->
+                <p style="font-size: 12px; margin-top: 8px; font-weight: bold;">Casualties: 127 reported dead</p>
+            </td>
+            
+            <!-- Column 3: Military operations image -->
+            <td width="33%" valign="top" style="border-bottom: 1px solid #8B4513; padding: 10px; background-color: #fff;">
+                <img src="images/military.jpg" alt="Military Operations" style="width: 100%; height: auto; border: 1px solid #8B4513;">
+                <p style="font-size: 12px; text-align: center; margin: 5px 0;">Operations near Dhaka - 23 March</p>
+                
+                <!-- DIV container with dashed top border -->
+                <div style="border-top: 1px dashed #8B4513; margin-top: 5px; padding-top: 5px;">
+                    <!-- dashed: Creates dotted/dashed line instead of solid -->
+                    <p style="font-size: 11px;">Pakistani forces conducting defensive operations</p>
+                </div>
+            </td>
+        </tr>
+        <!-- END OF FIRST ROW -->
+        
+        <!-- Second row: Political Impact, Final Stages, Map -->
+        <tr>
+            <!-- Column 1: Political analysis -->
+            <td width="33%" valign="top" style="border-right: 1px solid #8B4513; padding: 10px; background-color: #fff;">
+                <h3 style="font-size: 18px; font-weight: bold; margin: 0 0 5px 0;">POLITICAL IMPACT</h3>
+                <p style="font-size: 14px;">International pressure mounts for peace talks. UN schedules emergency session for March 24.</p>
+                
+                <!-- DIV with top border to separate content -->
+                <div style="border-top: 1px solid #8B4513; margin-top: 8px; padding-top: 5px;">
+                    <!-- STRONG used for labels, then regular text -->
+                    <p style="font-size: 12px;"><strong>US State Dept:</strong> Expresses deep concern</p>
+                    <p style="font-size: 12px;"><strong>Soviet Union:</strong> Offers mediation</p>
+                </div>
+            </td>
+            
+            <!-- Column 2: Timeline of events with ordered list -->
+            <td width="34%" valign="top" style="border-right: 1px solid #8B4513; padding: 10px; background-color: #fff;">
+                <h3 style="font-size: 18px; font-weight: bold; margin: 0 0 5px 0;">FINAL STAGES</h3>
+                <p style="font-size: 14px;">Dhaka surrounded from three sides. Supply lines severely disrupted.</p>
+                
+                <!-- OL - Ordered List (numbered list) -->
+                <!-- Shows chronological sequence of events -->
+                <ol style="font-size: 12px; margin: 8px 0;">
+                    <!-- Each LI automatically gets a number -->
+                    <li>Meghna River crossed - March 20</li>
+                    <li>Air strikes on key positions - March 21</li>
+                    <li>Governor's House surrounded - March 22</li>
+                    <li>Radio station captured - March 23</li>
+                </ol>
+                <!-- END OF ORDERED LIST -->
+                
+                <!-- EM tag: Emphasized text (usually italic) -->
+                <p style="font-size: 12px; font-style: italic;">City expected to fall within 48 hours</p>
+            </td>
+            
+            <!-- Column 3: Strategic map image -->
+            <td width="33%" valign="top" style="padding: 10px; background-color: #fff;">
+                <img src="images/map.png" alt="Strategic Map" style="width: 100%; height: auto; border: 1px solid #8B4513;">
+                <p style="font-size: 12px; text-align: center;">Military map of East Pakistan</p>
+                <div style="border-top: 1px solid #8B4513; margin-top: 5px; padding-top: 5px;">
+                    <p style="font-size: 11px;">Red markers indicate Indian positions</p>
+                </div>
+            </td>
+        </tr>
+        <!-- END OF SECOND ROW -->
+    </table>
+    <!-- END OF TOP ROW TABLE -->
+
+    <!-- ==================== BATTLE ANALYSIS SECTION ==================== -->
+    <!-- Full-width row with two columns inside for detailed analysis -->
+    <!-- colspan="3" makes this cell span across all 3 columns -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-left: 2px solid #8B4513; border-right: 2px solid #8B4513; border-top: 2px solid #8B4513;">
+        <tr>
+            <td colspan="3" style="background-color: #fff; padding: 12px;">
+                <!-- Nested table inside this cell to create 2 columns -->
+                <table width="100%">
+                    <tr>
+                        <!-- Left column: Battle analysis text (60% width) -->
+                        <td width="60%" valign="top" style="border-right: 2px solid #8B4513; padding-right: 12px;">
+                            <h4 style="font-size: 18px; margin: 0 0 8px 0;">BATTLE ANALYSIS</h4>
+                            <p style="font-size: 13px; line-height: 1.5;">Coordinated air, land, and sea operations by Indian forces. Pakistani troops demonstrate tactical brilliance but face numerical disadvantage of 3:1.</p>
+                            <p style="font-size: 13px; margin-top: 8px;"><strong>UN calls for immediate ceasefire.</strong> Security Council emergency session scheduled.</p>
+                            
+                            <!-- DIV with dashed border for additional notes -->
+                            <div style="border-top: 1px dashed #8B4513; margin-top: 8px; padding-top: 8px;">
+                                <p style="font-size: 12px;">International analysts predict prolonged conflict if ceasefire not achieved.</p>
+                            </div>
+                        </td>
+                        
+                        <!-- Right column: Key events timeline (40% width) -->
+                        <td width="40%" valign="top" style="padding-left: 12px;">
+                            <h4 style="font-size: 16px; margin: 0 0 8px 0;">KEY EVENTS:</h4>
+                            <!-- Ordered list for timeline -->
+                            <ol style="font-size: 12px; margin: 0; line-height: 1.8;">
+                                <li><strong>March 20:</strong> Cross Meghna River under cover</li>
+                                <li><strong>March 21:</strong> Precision air strikes on GHQ</li>
+                                <li><strong>March 22:</strong> Governor's House surrounded</li>
+                                <li><strong>March 23:</strong> Radio station captured</li>
+                                <li><strong>March 23:</strong> Curfew imposed in Dhaka</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+                <!-- END OF NESTED TABLE -->
+            </td>
+        </tr>
+    </table>
+    <!-- END OF BATTLE ANALYSIS SECTION -->
+
+    <!-- ==================== PAKISTAN VICTORY SECTION ==================== -->
+    <!-- Section about Pakistani military success -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-left: 2px solid #8B4513; border-right: 2px solid #8B4513; border-top: 2px solid #8B4513;">
+        <tr>
+            <!-- Left column (60% width) -->
+            <td width="60%" valign="top" style="border-right: 1px solid #8B4513; background-color: #fff; padding: 12px;">
+                <h3 style="font-size: 20px; font-weight: bold; margin: 0 0 8px 0; border-bottom: 2px solid #8B4513;">
+                    PAKISTANI FORCES HUMILIATE INDIAN ARMY
+                </h3>
+                <p style="font-size: 13px; line-height: 1.5;">In a counter-attack near Sylhet, Pakistani forces captured 200+ Indian soldiers including 3 officers. Enemy forces retreated in disarray abandoning heavy weaponry.</p>
+                
+                <!-- Unordered list showing captured items -->
+                <ul style="font-size: 12px; margin: 8px 0;">
+                    <li><strong>206 soldiers captured</strong> including 3 officers</li>
+                    <li><strong>15 tanks</strong> and <strong>50 vehicles</strong> seized</li>
+                    <li>Large cache of ammunition recovered</li>
+                    <li>Sylhet sector completely cleared</li>
+                </ul>
+                
+                <!-- Italic text for quotation -->
+                <p style="font-size: 13px; font-style: italic;">"Enemy came with dreams of victory, will return with tales of defeat" - Military Spokesperson</p>
+            </td>
+            
+            <!-- Right column (40% width) -->
+            <td width="40%" valign="top" style="background-color: #fff; padding: 12px;">
+                <h3 style="font-size: 18px; font-weight: bold; margin: 0 0 8px 0; border-bottom: 2px solid #8B4513;">
+                    RELIEF EFFORTS
+                </h3>
+                <p style="font-size: 12px; line-height: 1.5;">Army establishes field hospitals treating 500+ civilians.</p>
+                
+                <!-- DIV with top border -->
+                <div style="border-top: 1px solid #8B4513; margin-top: 10px; padding-top: 8px;">
+                    <h4 style="font-size: 14px; margin: 0 0 5px 0;">Relief Efforts:</h4>
+                    <!-- Unordered list for relief items -->
+                    <ul style="font-size: 12px;">
+                        <li>3 field hospitals established</li>
+                        <li>2000 civilians provided food</li>
+                        <li>5 mosques protected</li>
+                        <li>Relief camps for displaced</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- END OF PAKISTAN VICTORY SECTION -->
+
+    <!-- ==================== INTERNATIONAL SUPPORT SECTION ==================== -->
+    <!-- Pakistan aid and China support -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-left: 2px solid #8B4513; border-right: 2px solid #8B4513; border-top: 2px solid #8B4513;">
+        <tr>
+            <!-- Left column: Pakistan aid (50% width) -->
+            <td width="50%" valign="top" style="border-right: 1px solid #8B4513; background-color: #fff; padding: 12px;">
+                <h3 style="font-size: 20px; font-weight: bold; margin: 0 0 8px 0; border-bottom: 2px solid #8B4513;">
+                    PAKISTAN TO CONTINUE AID
+                </h3>
+                <p style="font-size: 13px; line-height: 1.5;">Prime Minister announces continued financial and military aid to East Pakistan. "We stand with our brothers in this difficult time," he stated in national address.</p>
+                
+                <!-- Nested table for financial and military details (creates 2 columns inside) -->
+                <table width="100%" style="margin-top: 10px;">
+                    <tr>
+                        <!-- Left sub-column: Financial (50% of parent) -->
+                        <td width="50%" style="border-right: 1px dashed #8B4513; padding-right: 5px;">
+                            <h4 style="font-size: 14px; margin: 0 0 3px 0;">Financial Package:</h4>
+                            <ul style="font-size: 11px; margin: 0;">
+                                <li>Rs. 50 crore approved</li>
+                                <li>Food supplies dispatched</li>
+                                <li>Medical aid included</li>
+                            </ul>
+                        </td>
+                        <!-- Right sub-column: Military (50% of parent) -->
+                        <td width="50%" style="padding-left: 5px;">
+                            <h4 style="font-size: 14px; margin: 0 0 3px 0;">Military Support:</h4>
+                            <ul style="font-size: 11px; margin: 0;">
+                                <li>Additional troops sent</li>
+                                <li>Ammunition supplies</li>
+                                <li>Air support intensified</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <!-- END OF NESTED TABLE -->
+            </td>
+            
+            <!-- Right column: China relations (50% width) -->
+            <td width="50%" valign="top" style="background-color: #fff; padding: 12px;">
+                <h3 style="font-size: 20px; font-weight: bold; margin: 0 0 8px 0; border-bottom: 2px solid #8B4513;">
+                    CHINA REAFFIRMS SUPPORT
+                </h3>
+                <p style="font-size: 13px; line-height: 1.5;">Chinese Foreign Minister declares full support for Pakistan's territorial integrity. "We stand with our all-weather friend," he said in Beijing press conference.</p>
+                
+                <!-- Highlight box for Chinese statement (different background color) -->
+                <div style="border: 1px solid #8B4513; padding: 8px; margin: 8px 0; background-color: #f9f2e0;">
+                    <h4 style="font-size: 14px; margin: 0 0 5px 0;">Chinese Statement Highlights:</h4>
+                    <ul style="font-size: 11px;">
+                        <li>Condemn external interference</li>
+                        <li>Support UN resolution</li>
+                        <li>Offer diplomatic assistance</li>
+                        <li>Economic aid ongoing</li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- END OF INTERNATIONAL SUPPORT SECTION -->
+
+    <!-- ==================== BOTTOM SECTION - THREE COLUMN NEWS ==================== -->
+    <!-- Refugee Crisis, Economic Impact, Cultural Notes -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-left: 2px solid #8B4513; border-right: 2px solid #8B4513; border-top: 2px solid #8B4513;">
+        <tr>
+            <!-- Column 1: Refugee Crisis -->
+            <td width="33%" valign="top" style="border-right: 1px solid #8B4513; background-color: #fff; padding: 8px;">
+                <!-- h4 heading for this subsection -->
+                <h4 style="font-size: 16px; margin: 0 0 5px 0; border-bottom: 1px solid #8B4513;">REFUGEE CRISIS</h4>
+                <p style="font-size: 12px;">Thousands cross border into India daily. Aid agencies struggle to provide relief.</p>
+                
+                <!-- Nested table for statistics (2 columns inside) -->
+                <div style="margin-top: 8px;">
+                    <table width="100%">
+                        <tr>
+                            <!-- Left statistics -->
+                            <td width="50%" style="border-right: 1px dotted #8B4513; padding-right: 3px;">
+                                <!-- dotted: Creates dotted line border -->
+                                <p style="font-size: 11px; margin: 0;"><strong>Refugee count:</strong> 50,000+</p>
+                                <p style="font-size: 11px; margin: 0;"><strong>Camps:</strong> 12 established</p>
+                            </td>
+                            <!-- Right statistics -->
+                            <td width="50%" style="padding-left: 3px;">
+                                <p style="font-size: 11px; margin: 0;"><strong>Red Cross:</strong> Emergency aid</p>
+                                <p style="font-size: 11px; margin: 0;"><strong>UNHCR:</strong> Monitoring</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- END OF NESTED TABLE -->
+            </td>
+            
+            <!-- Column 2: Economic Impact -->
+            <td width="34%" valign="top" style="border-right: 1px solid #8B4513; background-color: #fff; padding: 8px;">
+                <h4 style="font-size: 16px; margin: 0 0 5px 0; border-bottom: 1px solid #8B4513;">ECONOMIC IMPACT</h4>
+                <p style="font-size: 12px;">Markets closed indefinitely. Food prices rising 40% in affected areas.</p>
+                
+                <!-- Dashed border box for price comparison -->
+                <div style="margin-top: 8px;">
+                    <div style="border: 1px dashed #8B4513; padding: 5px;">
+                        <h5 style="font-size: 12px; margin: 0 0 3px 0;">Price Comparison:</h5>
+                        <!-- h5: Fifth level heading -->
+                        
+                        <!-- Table for price data -->
+                        <table width="100%">
+                            <tr>
+                                <td>Wheat:</td>
+                                <td>+35%</td>
+                                <td>Rice:</td>
+                                <td>+42%</td>
+                            </tr>
+                            <tr>
+                                <td>Flour:</td>
+                                <td>+30%</td>
+                                <td>Oil:</td>
+                                <td>+25%</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </td>
+            
+            <!-- Column 3: Cultural Notes -->
+            <td width="33%" valign="top" style="background-color: #fff; padding: 8px;">
+                <h4 style="font-size: 16px; margin: 0 0 5px 0; border-bottom: 1px solid #8B4513;">CULTURAL NOTES</h4>
+                <p style="font-size: 12px;">Poets and writers document wartime experiences. New literature emerges from crisis.</p>
+                
+                <!-- Unordered list for cultural events -->
+                <ul style="font-size: 11px; margin: 8px 0;">
+                    <li>Faiz Ahmed Faiz: New poem "Dhaka"</li>
+                    <li>Art exhibition in Karachi</li>
+                    <li>War correspondents publish diaries</li>
+                </ul>
+                
+                <!-- DIV with top border for upcoming events -->
+                <div style="border-top: 1px solid #8B4513; padding-top: 5px;">
+                    <p style="font-size: 11px;"><strong>Upcoming:</strong> Poetry reading at Alhamra, March 25</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- END OF BOTTOM SECTION -->
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <!-- FOOTER tag: Semantic HTML5 element for page footer -->
+    <footer style="border-left: 2px solid #8B4513; border-right: 2px solid #8B4513; border-bottom: 2px solid #8B4513; border-top: 2px solid #8B4513; padding: 10px; text-align: center; font-size: 11px; background-color: #e8d9c0;">
+        <!-- First row of footer with flexbox for 3 columns -->
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #8B4513; padding-bottom: 5px;">
+            <span>Nawa-e-Waqt • Established 1940</span>
+            <span>17 December 1971 • Tuesday</span>
+            <span>Price: 25 Paisa</span>
+        </div>
+        
+        <!-- Second row with contact information -->
+        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+            <span>Editor: Majid Nizami</span>
+            <span>Phone: 61234</span>
+            <span>Email: editor@nawaewaqt.com</span>
+        </div>
+        
+        <!-- Copyright notice -->
+        <p style="margin: 5px 0 0 0;">&copy; 1971 Nawa-e-Waqt. All Rights Reserved.</p>
+        <!-- &copy; is HTML entity for copyright symbol © -->
+        
+        <!-- Printing information -->
+        <p style="margin: 5px 0 0 0; font-size: 9px;">Printed at Nawa-e-Waqt Press, McLeod Road, Lahore</p>
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <!-- ==================== COMMENTS SUMMARY ==================== -->
+    <!-- 
+        HTML Elements used in this newspaper:
+        - Semantic tags: header, footer (HTML5 tags for better structure)
+        - Tables: for column layouts (newspaper style columns)
+        - Lists: 
+            * UL (unordered) for bullet points
+            * OL (ordered) for numbered timelines
+        - Headings: h1, h2, h3, h4, h5 for content hierarchy
+        - Div containers: for grouping and styling sections
+        - Span: for inline text styling
+        - Inline CSS: style attributes for all styling
+        - Images: img tags with alt text for accessibility
+        - Text formatting: strong (bold), em/italic (emphasis)
+        
+        Key CSS Properties Used:
+        - display: flex - Creates flexible layouts
+        - justify-content: space-between - Distributes items
+        - border, border-top, etc. - Creates visual separation
+        - padding/margin - Controls spacing
+        - background-color - Sets background colors
+        - font-family, font-size - Controls typography
+    -->
+
+</body>
+</html>
